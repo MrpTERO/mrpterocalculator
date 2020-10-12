@@ -32,7 +32,11 @@
 			peremennaja2=parseFloat(document.anketa.dva.value);
 			rezultat=peremennaja1/peremennaja2;
 			document.anketa.otvet.value=rezultat;
-			//alert(peremennaja1);
+			if(peremennaja1 = 0 || peremennaja2 = 0)
+			{
+				alert("Делить на 0 нельзя");
+			}
+			
 		}
 		function stepen(){
 			peremennaja1=parseFloat(document.anketa.odin.value);
